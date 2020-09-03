@@ -5,9 +5,9 @@
 
 ## Intake (week 1)
 
-**Je startniveau:** rood
+**Je startniveau:** Rood
 
-**Je focus:** surface plane
+**Je focus:** Surface plane
 
 **Je opdracht:** [Medium](https://medium.com/ )
 

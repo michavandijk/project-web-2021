@@ -1,6 +1,6 @@
 # [Project WEB 2020/2021](https://michavandijk.github.io/project-web-2021/)
-###### Procesverslag
-**Auteur:** Micha van Dijk
+#### Procesverslag
+##### Auteur: Micha van Dijk
 
 
 ## Intake (week 1)

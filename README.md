@@ -13,12 +13,11 @@
 
 **Screenshot(s):**
 
-![Medium.com screenshot](images/medium-screenshot.png)
+![Medium.com screenshot](images/screenshot-medium.png)
 
 **Breakdown-schets(en):**
 
 ![Medium.com breakdown](images/breakdown.png)
-
 ![Medium.com close breakdown](images/close-breakdown.png)
 
 

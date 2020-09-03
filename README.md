@@ -13,14 +13,14 @@
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
+![Medium.com screenshot](images/medium-screenshot.png)
 
 **Breakdown-schets(en):**
 
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
 
 
-## Bronnenlijst
+<!-- ## Bronnenlijst
 1. -bron 1-
 
 
@@ -62,4 +62,4 @@
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+-screenshot(s) van je eindresultaat- -->

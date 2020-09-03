@@ -13,11 +13,13 @@
 
 **Screenshot(s):**
 
-![Medium.com](images/medium-screenshot.png)
+![Medium.com screenshot](images/medium-screenshot.png)
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
+![Medium.com breakdown](images/breakdown.png)
+
+![Medium.com close breakdown](images/close-breakdown.png)
 
 
 <!-- ## Bronnenlijst

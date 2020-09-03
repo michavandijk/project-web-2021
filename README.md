@@ -13,7 +13,7 @@
 
 **Screenshot(s):**
 
-![Medium.com screenshot](images/medium-screenshot.png)
+![Medium.com](images/medium-screenshot.png)
 
 **Breakdown-schets(en):**
 

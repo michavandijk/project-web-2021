@@ -21,46 +21,12 @@
 ![Medium.com close breakdown](images/close-breakdown.png)
 
 
-<!-- ## Bronnenlijst
-1. -bron 1-
-
-
 ## Voortgang
 
-### Voortgang 1 (week 3)
+### Week 1
+Deze week is begonnen met een kick-off door Sanne. Hier werd de algemene planning van het project verteld, dit was prettig zodat je wist wat er per week van je verwacht werd. De rest van de week stond in het teken van typografie en het maken van de intake. De manier waarop je kunt oefenen in CodePen is zeer prettig. Het enige nadeel van CodePen vind ik wel dat je alle code exact zelf moet schrijven en niet zoals in VSCode of een ander code programma op 'tab' kunt drukken waardoor je een stuk sneller bent.
 
--same as voortgang 1-
+[Oefening 1](https://codepen.io/michavandijk/pen/XWdevWe)
+[Oefening 2](https://codepen.io/michavandijk/pen/ExKwqxo)
 
-
-### Voortgang 2 (week 5)
-
--same as voortgang 1-
-
-
-### Voortgang 3 (week 6)
-
-#### Stand van zaken
-
--dit ging goed & dit was lastig-
-
-**Screenshot(s):**
-
--screenshot(s) van hoe ver je bent-
-
-
-## Agenda voor meeting
-
--samen met je groepje opstellen-
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
-
-
-## Eindgesprek (week 7/8)
-
--dit ging goed & dit was lastig-
-
-**Screenshot(s):**
-
--screenshot(s) van je eindresultaat- -->
+### Week 2

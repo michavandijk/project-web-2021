@@ -118,59 +118,70 @@ header nav {
 
 /* ////////// ARTICLE ////////// */
 
-main section:nth-of-type(-n + 2) article {
+main section:nth-of-type(-n + 2) article,
+main section:nth-of-type(4) article {
     display: flex;
     flex-wrap: wrap;
 }
 
-main section:nth-of-type(-n + 2) article a {
+main section:nth-of-type(-n + 2) article a,
+main section:nth-of-type(4) article a {
     display: inline-block;
   }
 
-main section:nth-of-type(-n + 2) article > a:first-of-type {
+main section:nth-of-type(-n + 2) article > a:first-of-type,
+main section:nth-of-type(4) article > a:first-of-type {
     flex-basis: 100%;
     display: block;
     height: 150px;
     margin-bottom: 16px;
 }
 
-main section:nth-of-type(-n + 2) article > div {
+main section:nth-of-type(-n + 2) article > div,
+main section:nth-of-type(4) article > div {
     flex-basis: calc(100% - 100px);
 }
 
-main section:nth-of-type(-n + 2) article div p {
+main section:nth-of-type(-n + 2) article div p,
+main section:nth-of-type(4) article div p {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.54);
 }
 
-main section:nth-of-type(-n + 2) article div time {
+main section:nth-of-type(-n + 2) article div time,
+main section:nth-of-type(4) article div time {
     font-size: 15px;
     color: rgba(0,0,0,.54); 
     display: inline-block;
     margin-top: 4px;
 }
 
-main section:nth-of-type(-n + 2) article > div > div {
+main section:nth-of-type(-n + 2) article > div > div,
+main section:nth-of-type(4) article > div > div {
     display: flex;
     align-items: center;
     margin-top: 12px;
 }
 
-main section:nth-of-type(-n + 2) article > div > div > div {
+main section:nth-of-type(-n + 2) article > div > div > div,
+main section:nth-of-type(4) article > div > div > div {
     flex-grow: 1;
     color: rgba(0, 0, 0, 0.84);
 }
 
-main section:nth-of-type(-n + 2) article:first-of-type {
+main section:nth-of-type(-n + 2) article:first-of-type,
+main section:nth-of-type(4) article:first-of-type {
     margin-bottom: 24px;
 }
 
-main section:nth-of-type(-n + 2) article:first-of-type h1 {
+main section:nth-of-type(-n + 2) article:first-of-type h1,
+main section:nth-of-type(4) article:first-of-type h1 {
     color: rgba(0, 0, 0, 0.84);
     margin-bottom: 4px;
 }
 
-main section:nth-of-type(-n + 2) article a:first-of-type img {
+main section:nth-of-type(-n + 2) article a:first-of-type img,
+main section:nth-of-type(4) article a:first-of-type img {
     margin-bottom: 14px;
     height: 100%;
     width: 100%;
@@ -178,18 +189,22 @@ main section:nth-of-type(-n + 2) article a:first-of-type img {
 }
 
 main section:nth-of-type(-n + 2) article > div > div > div p, 
-main section:nth-of-type(-n + 2) article > div > div > div a {
+main section:nth-of-type(-n + 2) article > div > div > div a,
+main section:nth-of-type(4) article > div > div > div p, 
+main section:nth-of-type(4) article > div > div > div a {
     color: rgba(0, 0, 0, 0.84);
 }
 
-main section:nth-of-type(-n + 2) article:first-of-type {
+main section:nth-of-type(-n + 2) article:first-of-type,
+main section:nth-of-type(4) article:first-of-type {
     margin-bottom: 40px;    
 }
 
 
 /* ////////// OVERRULE SOME HERO ARTICLE STYLES ////////// */
 
-main section:nth-of-type(-n + 2) article div + a {
+main section:nth-of-type(-n + 2) article div + a,
+main section:nth-of-type(4) article div + a {
     flex-basis: 100px !important;
     padding-left: 24px;
     display: inline !important; 
@@ -197,12 +212,14 @@ main section:nth-of-type(-n + 2) article div + a {
     margin-bottom: 0 !important;
 }   
 
-main section:nth-of-type(-n + 2) article div + a img {
+main section:nth-of-type(-n + 2) article div + a img,
+main section:nth-of-type(4) article div + a img {
     height: auto !important;
     width: auto !important;
 }
 
-main section:nth-of-type(-n + 2) article:not(:first-of-type) h2 {
+main section:nth-of-type(-n + 2) article:not(:first-of-type) h2,
+main section:nth-of-type(4) article:not(:first-of-type) h2 {
     font-size: 18px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.84);
@@ -214,7 +231,8 @@ main section:nth-of-type(-n + 2) article:not(:first-of-type) h2 {
     -webkit-box-orient: vertical;
 }
 
-main section:nth-of-type(-n + 2) article:nth-of-type(n + 3) { 
+main section:nth-of-type(-n + 2) article:nth-of-type(n + 3),
+main section:nth-of-type(4) article:nth-of-type(n + 3) { 
     margin-top: 24px;
 }
 
@@ -240,14 +258,15 @@ main section:first-of-type > a {
 
 main section:first-of-type > hr {
     margin-top: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     border-color: rgba(0, 0, 0, 0.15);  
 }
 
 
 /* ////////// SECTION 2 - ARTICLES OVERRULE ////////// */
 
-main section:nth-of-type(2) h2 {
+main section:nth-of-type(2) h2,
+main section:nth-of-type(4) h2 {
     font-size: 18px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.84);
@@ -260,7 +279,8 @@ main section:nth-of-type(2) h2 {
     -webkit-box-orient: vertical;
 }
 
-main section:nth-of-type(2) h3 {
+main section:nth-of-type(2) h3,
+main section:nth-of-type(4) h3 {
     font-size: 15px;
     font-weight: normal;
     text-transform: uppercase;
@@ -273,6 +293,7 @@ main section:nth-of-type(2) h3 {
 
 main section:nth-of-type(3) {
     margin-top: 32px;
+    margin-bottom: 52px;
 }
 
 main section:nth-of-type(3) h1 {
@@ -282,5 +303,41 @@ main section:nth-of-type(3) h1 {
 
 main section:nth-of-type(3) hr {
     border-color: rgba(0, 0, 0, 0.15);
+    margin-bottom: 32px;
+}
+
+main section:nth-of-type(3) ul li {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+main section:nth-of-type(3) ul li h4 {
+    color: rgba(0, 0, 0, 0.15);
+    font-size: 34px;
+    font-weight: normal;
+    width: 29px;
+    margin-right: 16px;
+}
+
+main section:nth-of-type(3) ul li h2 {
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 18px;
+}
+
+main section:nth-of-type(3) ul li div > div {
+    margin-top: 4px;
+}
+
+main section:nth-of-type(3) ul li a {
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 15px;
+}
+
+main section:nth-of-type(3) ul li time {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 15px;
+}
+
+main section:nth-of-type(4) {
     margin-bottom: 32px;
 }

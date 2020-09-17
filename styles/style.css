@@ -13,7 +13,7 @@
 }
 
 
-/* CSS RESET */
+/* ////////// CSS RESET ////////// */
 
 html { 
     box-sizing: border-box; 
@@ -38,7 +38,7 @@ img {
 }
 
 
-/* OVERALL */
+/* ////////// OVERALL STYLING ////////// */
 
 body {
     font-family: "medium-sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",sans-serif;
@@ -64,7 +64,7 @@ a {
 }
 
 
-/* HEADER */
+/* ////////// HEADER ////////// */
 
 nav {
     max-width: 100%;
@@ -116,81 +116,80 @@ header nav {
 }
 
 
-/* HERO ARTICLE */
+/* ////////// ARTICLE ////////// */
 
-/* Select full article */
-main section:first-of-type article {
+main section:nth-of-type(-n + 2) article {
     display: flex;
     flex-wrap: wrap;
 }
 
-main section:first-of-type article a {
+main section:nth-of-type(-n + 2) article a {
     display: inline-block;
   }
 
-main section:first-of-type article > a:first-of-type {
+main section:nth-of-type(-n + 2) article > a:first-of-type {
     flex-basis: 100%;
     display: block;
     height: 150px;
     margin-bottom: 16px;
 }
 
-main section:first-of-type article > div {
+main section:nth-of-type(-n + 2) article > div {
     flex-basis: calc(100% - 100px);
 }
 
-main section:first-of-type article div p {
+main section:nth-of-type(-n + 2) article div p {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.54);
 }
 
-main section:first-of-type article div time {
+main section:nth-of-type(-n + 2) article div time {
     font-size: 15px;
     color: rgba(0,0,0,.54); 
     display: inline-block;
     margin-top: 4px;
 }
 
-main section:first-of-type article > div > div {
+main section:nth-of-type(-n + 2) article > div > div {
     display: flex;
     align-items: center;
     margin-top: 12px;
 }
 
-main section:first-of-type article > div > div > div {
+main section:nth-of-type(-n + 2) article > div > div > div {
     flex-grow: 1;
     color: rgba(0, 0, 0, 0.84);
 }
 
-main section:first-of-type article:first-of-type {
+main section:nth-of-type(-n + 2) article:first-of-type {
     margin-bottom: 24px;
 }
 
-main section:first-of-type article:first-of-type h1 {
+main section:nth-of-type(-n + 2) article:first-of-type h1 {
     color: rgba(0, 0, 0, 0.84);
     margin-bottom: 4px;
 }
 
-main section:first-of-type article a:first-of-type img {
+main section:nth-of-type(-n + 2) article a:first-of-type img {
     margin-bottom: 14px;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-main section:first-of-type article > div > div > div p, 
-main section:first-of-type article > div > div > div a {
+main section:nth-of-type(-n + 2) article > div > div > div p, 
+main section:nth-of-type(-n + 2) article > div > div > div a {
     color: rgba(0, 0, 0, 0.84);
 }
 
-main section:first-of-type article:first-of-type {
+main section:nth-of-type(-n + 2) article:first-of-type {
     margin-bottom: 40px;    
 }
 
 
-/* NORMAL ARTICLE */
+/* ////////// OVERRULE SOME HERO ARTICLE STYLES ////////// */
 
-main section:first-of-type article div + a {
+main section:nth-of-type(-n + 2) article div + a {
     flex-basis: 100px !important;
     padding-left: 24px;
     display: inline !important; 
@@ -198,12 +197,12 @@ main section:first-of-type article div + a {
     margin-bottom: 0 !important;
 }   
 
-main section:first-of-type article div + a img {
+main section:nth-of-type(-n + 2) article div + a img {
     height: auto !important;
     width: auto !important;
 }
 
-main section:first-of-type article:not(:first-of-type) h2 {
+main section:nth-of-type(-n + 2) article:not(:first-of-type) h2 {
     font-size: 18px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.84);
@@ -215,12 +214,12 @@ main section:first-of-type article:not(:first-of-type) h2 {
     -webkit-box-orient: vertical;
 }
 
-main section:first-of-type article:nth-of-type(n + 3) { 
+main section:nth-of-type(-n + 2) article:nth-of-type(n + 3) { 
     margin-top: 24px;
 }
 
 
-/* BUTTON EDITOR'S PICKS */
+/* ////////// BUTTON EDITOR'S PICKS ////////// */
 
 main section:first-of-type > a {
     display: inline-block;
@@ -241,6 +240,47 @@ main section:first-of-type > a {
 
 main section:first-of-type > hr {
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 80px;
     border-color: rgba(0, 0, 0, 0.15);  
+}
+
+
+/* ////////// SECTION 2 - ARTICLES OVERRULE ////////// */
+
+main section:nth-of-type(2) h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 4px;
+    overflow: hidden!important;
+    max-height: 80px!important;
+    text-overflow: ellipsis!important;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 2!important;
+    -webkit-box-orient: vertical;
+}
+
+main section:nth-of-type(2) h3 {
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.54);
+    letter-spacing: 0.8px;
+}
+
+
+/* ////////// SECTION 3 - LIST ////////// */
+
+main section:nth-of-type(3) {
+    margin-top: 32px;
+}
+
+main section:nth-of-type(3) h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+main section:nth-of-type(3) hr {
+    border-color: rgba(0, 0, 0, 0.15);
+    margin-bottom: 32px;
 }

@@ -12,6 +12,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'medium-content-title-font';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://glyph.medium.com/font/78ce731/0-3j_4g_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/fell-400-normal.woff') format('woff');
+    unicode-range: U+0-7F,U+A0,U+200A,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026;
+}
+
 
 /* ////////// CSS RESET ////////// */
 
@@ -48,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-main {
+main, footer {
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -67,6 +75,8 @@ a {
 /* ////////// HEADER ////////// */
 
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     /* By default, flex items will all try to fit onto one line. Flex wrap will wrap onto multiple lines, from top to bottom. */
     flex-wrap: wrap;
@@ -75,6 +85,7 @@ header {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 8px;
+    background-color: white;
 }
 
 header div {
@@ -91,4 +102,138 @@ header div a:last-of-type img {
     border-radius: 50%;
     width: 32px;
     height: 32px;
+}
+
+
+/* ////////// MAIN ////////// */
+
+main {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+h1 {
+    font-family: medium-content-title-font;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 42px;
+    padding-top: 19px;
+}
+
+
+/* ////////// SOCIAL ICONS ////////// */
+
+main > div:first-of-type {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+main div:first-of-type img {
+    height: 29px;
+    padding-right: 6px;
+}
+
+
+/* ////////// INFORMATION ////////// */
+
+main div:nth-of-type(2) {
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+main div:nth-of-type(2) img {
+    width: 48px;
+    border-radius: 100%;
+}
+
+main div:nth-of-type(2) > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+main div:nth-of-type(2) > div a {
+    color: rgba(0, 0, 0, 0.84)
+}
+
+main div:nth-of-type(2) > div time {
+    color: rgba(0,0,0,.54);
+}
+
+
+/* ////////// ARTICLE ////////// */
+
+main article p {
+    color: rgba(0,0,0,0.8);
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 28px;
+}
+
+main article p:first-of-type {
+    color: rgba(0,0,0,0.8);
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+main article h2 {
+    margin-top: 28px;
+    margin-bottom: -28px;
+}
+
+main article blockquote {
+    color: rgba(117, 117, 117, 1);
+    font-size: 30px;
+    line-height: 44px;
+}
+
+
+/* ////////// BUTTONS ////////// */
+
+main article div {
+    margin-top: 16px;
+}
+
+
+/* ////////// FOOTER ////////// */
+
+footer {
+    margin-top: 26px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+footer > div {
+    display: flex;
+}
+
+footer > div a {
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+footer > div > div {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+footer > p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+footer > a {
+    display: inline-block;
+}
+
+footer > a img {
+    width: 140px;
 }

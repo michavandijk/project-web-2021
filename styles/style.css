@@ -98,22 +98,47 @@ blockquote {
 /* HEADER */
 
 nav {
-    max-width: 100%;
-    overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: scroll;
     margin-top: 12px;
     margin-bottom: 1rem;
 }
 
 nav ul {
     display: flex;
+    margin-left: 1.5rem;
 }
 
 nav ul li a {
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.54);
     text-transform: uppercase;
-    margin-right: 10px;
+    letter-spacing: 0.5px;
+}
+
+nav ul li {
+    margin-top: 0.1rem;
+    margin-right: 1.2rem;
+}
+
+nav ul li:last-of-type {
+    margin-right: 0;
+}
+
+nav ul::before {
+    content: url('../images/navigation-arrow.svg');
+    background-color: white;
+    position: fixed;
+    left: 0.8rem;
+}
+
+nav ul::after {
+    content: url('../images/navigation-arrow.svg');
+    background-color: white;
+    position: fixed;
+    right: 0.8rem;
+    transform: scaleX(-1);
 }
 
 header {
@@ -245,8 +270,6 @@ main section:nth-of-type(4) article div + a {
     flex-basis: 100px;
     padding-left: 24px;
     display: inline; 
-    height: auto;
-    margin-bottom: 0;
 }   
 
 main section:nth-of-type(-n + 2) article div + a img,

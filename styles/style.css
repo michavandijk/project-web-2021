@@ -1,5 +1,5 @@
 /* ------------------------------------ */
-/* IMPORTING FONTS */
+/* IMPORTING FONTS FACES */
 
 @font-face {
     font-family: 'medium-sans';
@@ -62,8 +62,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main, footer {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 h1 {
@@ -93,6 +93,7 @@ blockquote {
     font-size: 30px;
     line-height: 44px;
 }
+
 
 /* ------------------------------------ */
 /* HEADER */
@@ -138,6 +139,7 @@ nav ul::after {
     background-color: white;
     position: fixed;
     right: 0.8rem;
+    /* Make the icon (img) flip horizontal */
     transform: scaleX(-1);
 }
 
@@ -147,8 +149,8 @@ header {
     flex-wrap: wrap;
     /* This defines the alignment along the main axis */
     justify-content: space-between;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 8px;
     background-color: white;
 }
@@ -165,8 +167,8 @@ header div a:nth-of-type(-n+2) img {
 
 header div a:last-of-type img {
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 header nav {
@@ -174,6 +176,7 @@ header nav {
     flex-grow: 1;
     /* This defines the ability for a flex item to shrink if necessary // not in this case */
     flex-shrink: 0;
+    /* This defines the default size of an element before the remaining space is distributed. */
     flex-basis: 100%;
 }
 
@@ -263,7 +266,7 @@ main section:nth-of-type(4) article:first-of-type {
 
 
 /* ------------------------------------ */
-/* OVERRULE HERO ARTICLE STYLES */
+/* OVERRULE SOME HERO ARTICLE STYLES // FOR DEFAULT ARTICLES */
 
 main section:nth-of-type(-n + 2) article div + a,
 main section:nth-of-type(4) article div + a {
@@ -284,7 +287,7 @@ main section:nth-of-type(4) article:not(:first-of-type) h2 {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.84);
 
-    /* This is all Medium code, it makes sure that the title will be broken when it reaches a certain height */
+    /* This is all Medium code, it makes sure that the title will be broken when it reaches a certain height (80px) */
     overflow: hidden;
     max-height: 80px;
     text-overflow: ellipsis;
@@ -327,7 +330,7 @@ main section:first-of-type > hr {
 
 
 /* ------------------------------------ */
-/* OVERRULE DEFAULT ARTICLE STYLES */
+/* OVERRULE DEFAULT ARTICLE STYLES // TO ADD AN EXTRA RULE TO THE TOP OF THE ARTICLE */
 
 main section:nth-of-type(2) h2,
 main section:nth-of-type(4) h2 {
@@ -399,48 +402,6 @@ main section:nth-of-type(3) ul li time {
 
 main section:nth-of-type(4) {
     margin-bottom: 32px;
-}
-
-
-/* ------------------------------------ */
-/* FOOTER */
-
-footer {
-    margin-top: 26px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-footer > div {
-    display: flex;
-}
-
-footer > div a {
-    color: white;
-    font-size: 18px;
-    padding-left: 10px;
-}
-
-footer > div > div {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-footer > p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 18px;
-    margin-top: 30px;
-    margin-bottom: 16px;
-}
-
-footer > a {
-    display: inline-block;
-}
-
-footer > a img {
-    width: 140px;
 }
 
 
@@ -539,4 +500,46 @@ footer > a img {
 
 .article main article div {
     margin-top: 16px;
+}
+
+
+/* ------------------------------------ */
+/* FOOTER // ONLY IN A COMPLETE ARTICLE */
+
+footer {
+    margin-top: 26px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+footer > div {
+    display: flex;
+}
+
+footer > div a {
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+footer > div > div {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+footer > p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 1rem;
+}
+
+footer > a {
+    display: inline-block;
+}
+
+footer > a img {
+    width: 140px;
 }

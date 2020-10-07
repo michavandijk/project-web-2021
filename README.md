@@ -70,3 +70,20 @@ Daarnaast heeft Janno aan mij gevraagd of ik een lijstje wil opstellen met de mi
 
 [Oefening 1 - Animeren](https://codepen.io/michavandijk/pen/dyMLOoK)<br />
 [Oefening 2 - Animeren](https://codepen.io/michavandijk/pen/QWNPGpy)
+
+#### Voortgang 2
+Tijdens mijn tweede voortgangsgesprek heb ik mijn volledige website laten zien. Daarnaast ook uitgelegd hoe ik de feedback heb verwerkt en aangegeven waar ik nu verder mee wil gaan. Zoals eerder aangegeven ga ik kijken naar de volgende punten:
+- Clap-animatie op artikelniveau
+- Scrollbare navigatie op de homepage
+- Reactie plaatsen en daadwerkelijk tonen
+
+Hier verwacht ik dat het plaatsen van een reactie en het daadwerkelijk tonen de lastigste opdracht wordt. Vervolgens is het alleen nog een kwestie van het netjes becommentariëren van de code voor de eindopdracht. 
+
+### Week 6
+In week 6 stond de laatste werkgroep gepland tijdens deze weken werden er twee dingen besproken: toegankelijkheid en je laatste voortgang. In het weekend voor de werkgroep zat ik aardig volgepland, waardoor ik de opdracht over toegankelijkheid niet heb kunnen maken. Deze haal ik op een later moment nog wel in. In de werkgroep heeft Janno een uitleg gegeven over hamburgers menu's en een carousel. Interessant om te zien, maar een groot deel hiervan begreep ik al.
+
+[Oefening - Toegankelijkheid](https://codepen.io/michavandijk/pen/MWeWyaq)
+
+Tijdens het geplande voortgangsgesprek zit ik in Portugal en kon dus niet afspreken met Janno. Dit heb ik tijdens de werkgroep aangegeven en dat was geen probleem. Zolang ik maar een groot deel van een interactie had uitgewerkt en deze naar hem opstuurde. Dit heb ik dus ook gedaan en kan na (en een beetje tijdens) mijn vakantie verder werken aan de laatste twee interacties:
+- Clap-animatie op artikelniveau
+- Reactie plaatsen en daadwerkelijk tonen

@@ -36,6 +36,7 @@ html {
 } 
     
 body, h1, h2, h3, h4, h5, h6, p, ol, ul { 
+    /* make sure there is no padding or margin to any element */
     margin: 0; 
     padding: 0; 
 } 
@@ -54,6 +55,7 @@ img {
 /* OVERALL STYLING */
 
 body {
+    /* set the body font */
     font-family: "medium-sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",sans-serif;
 }
 
@@ -62,22 +64,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main, footer {
+    /* sets 1rem (16px) padding to the left and right for the main and footer */
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 h1 {
-    font-size: 21px;
-    line-height: 24px;
+    font-size: 1.3125rem;
+    line-height: 1.5rem;
     font-weight: 600;
 }
 
 .article h1 {
     font-family: medium-content-title-font;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 400;
-    line-height: 42px;
-    padding-top: 19px;
+    line-height: 2.625rem;
+    padding-top: 1.1875rem;
 }
 
 a {
@@ -90,8 +93,8 @@ a {
 
 blockquote {
     color: rgba(117, 117, 117, 1);
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 1.875rem;
+    line-height: 2.75rem;
 }
 
 
@@ -102,14 +105,16 @@ nav {
     display: flex;
     align-items: center ;
     max-width: 100%;
-    margin-top: 12px;
+    margin-top: 0.75rem;
     margin-bottom: 1rem;
 }
 
 nav ul {
     display: flex;
     width: 100%;
+    /* makes sure that the navigation won't grow bigger than the max view width */
     max-width: 100vw;
+    /* makes it possible to scroll on the x-axis */
     overflow-x: scroll;
     margin-left: 0.8rem;
 }
@@ -118,7 +123,7 @@ nav ul li a {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.54);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.0313rem;
 }
 
 nav ul li {
@@ -127,6 +132,7 @@ nav ul li {
 
 nav img:nth-of-type(2) {
     padding-right: 0.8rem;
+    /* scale the arrow to make it swap horizontally */
     transform: scale(-1);
 }
 
@@ -138,7 +144,7 @@ header {
     justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 8px;
+    padding-top: 0.5rem;
     background-color: white;
 }
 
@@ -149,7 +155,7 @@ header div {
 }
 
 header div a:nth-of-type(-n+2) img {
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
 header div a:last-of-type img {
@@ -174,24 +180,29 @@ header nav {
 main section:nth-of-type(-n + 2) article,
 main section:nth-of-type(4) article {
     display: flex;
+    /* By default, flex items will all try to fit onto one line. Flex wrap will wrap onto multiple lines, from top to bottom. */
     flex-wrap: wrap;
 }
 
 main section:nth-of-type(-n + 2) article a,
 main section:nth-of-type(4) article a {
+    /* Characteristics of block, but sits on a line */
     display: inline-block;
   }
 
 main section:first-of-type article:first-of-type > a:first-of-type {
+    /* This defines the default size of an element before the remaining space is distributed. */
     flex-basis: 100%;
+    /* Characteristics of block, but sits on a line */
     display: block;
-    height: 150px;
-    margin-bottom: 16px;
+    height: 9.375rem;
+    margin-bottom: 1rem;
 }
 
 main section:nth-of-type(-n + 2) article > div,
 main section:nth-of-type(4) article > div {
-    flex-basis: calc(100% - 100px);
+     /* the image is 100px, so to make sure the image fits in the same line, remove 100px */
+    flex-basis: calc(100% - 6.25rem);
 }
 
 main section:nth-of-type(-n + 2) article div p,
@@ -202,40 +213,43 @@ main section:nth-of-type(4) article div p {
 
 main section:nth-of-type(-n + 2) article div time,
 main section:nth-of-type(4) article div time {
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: rgba(0,0,0,.54); 
+    /* Characteristics of block, but sits on a line */
     display: inline-block;
-    margin-top: 4px;
+    margin-top: 0.25rem;
 }
 
 main section:nth-of-type(-n + 2) article > div > div,
 main section:nth-of-type(4) article > div > div {
     display: flex;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 0.75rem;
 }
 
 main section:nth-of-type(-n + 2) article > div > div > div,
 main section:nth-of-type(4) article > div > div > div {
+    /* This defines the ability for a flex item to grow if necessary */
     flex-grow: 1;
     color: rgba(0, 0, 0, 0.84);
 }
 
 main section:nth-of-type(-n + 2) article:first-of-type,
 main section:nth-of-type(4) article:first-of-type {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 main section:nth-of-type(-n + 2) article:first-of-type h1,
 main section:nth-of-type(4) article:first-of-type h1 {
     color: rgba(0, 0, 0, 0.84);
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 main section:first-of-type article:first-of-type a:first-of-type img {
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
     height: 100%;
     width: 100%;
+    /* the image will fill the height and width of its box */
     object-fit: cover;
 }
 
@@ -248,7 +262,7 @@ main section:nth-of-type(4) article > div > div > div a {
 
 main section:nth-of-type(-n + 2) article:first-of-type,
 main section:nth-of-type(4) article:first-of-type {
-    margin-bottom: 40px;    
+    margin-bottom: 2.5rem;    
 }
 
 
@@ -257,8 +271,8 @@ main section:nth-of-type(4) article:first-of-type {
 
 main section:nth-of-type(-n + 2) article div + a,
 main section:nth-of-type(4) article div + a {
-    flex-basis: 100px;
-    padding-left: 24px;
+    flex-basis: 6.25rem;
+    padding-left: 1.5rem;
     display: inline; 
 }   
 
@@ -270,13 +284,13 @@ main section:nth-of-type(4) article div + a img {
 
 main section:nth-of-type(-n + 2) article:not(:first-of-type) h2,
 main section:nth-of-type(4) article:not(:first-of-type) h2 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.84);
 
-    /* This is all Medium code, it makes sure that the title will be broken when it reaches a certain height (80px) */
+    /* This is all Medium code, it makes sure that the title will be broken when it reaches a certain height (5rem) */
     overflow: hidden;
-    max-height: 80px;
+    max-height: 5rem;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -285,7 +299,7 @@ main section:nth-of-type(4) article:not(:first-of-type) h2 {
 
 main section:nth-of-type(-n + 2) article:nth-of-type(n + 3),
 main section:nth-of-type(4) article:nth-of-type(n + 3) { 
-    margin-top: 24px;
+    margin-top: 1.5rem;
 }
 
 
@@ -294,14 +308,14 @@ main section:nth-of-type(4) article:nth-of-type(n + 3) {
 
 main section:first-of-type > a {
     display: inline-block;
-    margin-top: 52px;
-    margin-left: 10px;
+    margin-top: 3.25rem;
+    margin-left: 0.625rem;
     color: #03a87c;
     text-transform: uppercase;
 }
 
 main section:first-of-type > a img {
-    margin-top: 4px;
+    margin-top: 0.25rem;
 }
 
 main section:first-of-type > a {
@@ -310,8 +324,8 @@ main section:first-of-type > a {
 }
 
 main section:first-of-type > hr {
-    margin-top: 24px;
-    margin-bottom: 50px;
+    margin-top: 1.5rem;
+    margin-bottom: 3.125rem;
     border-color: rgba(0, 0, 0, 0.15);  
 }
 
@@ -321,19 +335,19 @@ main section:first-of-type > hr {
 
 main section:nth-of-type(2) h2,
 main section:nth-of-type(4) h2 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.84);
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 main section:nth-of-type(2) h3,
 main section:nth-of-type(4) h3 {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: normal;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.54);
-    letter-spacing: 0.8px;
+    letter-spacing: 0.05rem;
 }
 
 
@@ -341,54 +355,54 @@ main section:nth-of-type(4) h3 {
 /* SECTION 3 LIST STYLES */
 
 main section:nth-of-type(3) {
-    margin-top: 32px;
-    margin-bottom: 52px;
+    margin-top: 2rem;
+    margin-bottom: 3.25rem;
 }
 
 main section:nth-of-type(3) h1 {
-    font-size: 24px;
-    margin-bottom: 16px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 main section:nth-of-type(3) hr {
     border-color: rgba(0, 0, 0, 0.15);
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 main section:nth-of-type(3) ul li {
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 main section:nth-of-type(3) ul li h4 {
     color: rgba(0, 0, 0, 0.15);
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: normal;
-    width: 29px;
-    margin-right: 16px;
+    width: 1.8125rem;
+    margin-right: 1rem;
 }
 
 main section:nth-of-type(3) ul li h2 {
     color: rgba(0, 0, 0, 0.84);
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 main section:nth-of-type(3) ul li div > div {
-    margin-top: 4px;
+    margin-top: 0.25rem;
 }
 
 main section:nth-of-type(3) ul li a {
     color: rgba(0, 0, 0, 0.84);
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 main section:nth-of-type(3) ul li time {
     color: rgba(0, 0, 0, 0.54);
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 main section:nth-of-type(4) {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 
@@ -405,6 +419,7 @@ main section:nth-of-type(4) {
 /* STICKY HEADER */
 
 .article header {
+    /* the header will stay on top of the screen, even when you are scrolling */
     position: sticky;
     top: 0;
 }
@@ -416,12 +431,12 @@ main section:nth-of-type(4) {
 .article main > div:first-of-type {
     display: flex;
     align-items: center;
-    margin-top: 28px;
+    margin-top: 1.75rem;
 }
 
 .article main div:first-of-type img {
-    height: 29px;
-    padding-right: 6px;
+    height: 1.8125rem;
+    padding-right: 0.375rem;
 }
 
 
@@ -430,12 +445,12 @@ main section:nth-of-type(4) {
 
 .article main div:nth-of-type(2) {
     display: flex;
-    margin-top: 28px;
-    margin-bottom: 28px;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
 }
 
 .article main div:nth-of-type(2) img {
-    width: 48px;
+    width: 3rem;
     border-radius: 100%;
 }
 
@@ -443,7 +458,7 @@ main section:nth-of-type(4) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 12px;
+    margin-left: 0.75rem;
 }
 
 .article main div:nth-of-type(2) > div a {
@@ -460,9 +475,9 @@ main section:nth-of-type(4) {
 
 .article main article p {
     color: rgba(0,0,0,0.8);
-    font-size: 18px;
-    line-height: 28px;
-    margin-top: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 1.75rem;
 }
 
 .article main article p:first-of-type {
@@ -477,8 +492,8 @@ main section:nth-of-type(4) {
 }
 
 .article main article h2 {
-    margin-top: 28px;
-    margin-bottom: -28px;
+    margin-top: 1.75rem;
+    margin-bottom: -1.75rem;
 }
 
 
@@ -486,7 +501,7 @@ main section:nth-of-type(4) {
 /* INTERACTION BUTTONS */
 
 .article main article div {
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 
@@ -494,7 +509,7 @@ main section:nth-of-type(4) {
 /* FOOTER // ONLY IN A COMPLETE ARTICLE */
 
 footer {
-    margin-top: 26px;
+    margin-top: 1.625rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: rgba(0, 0, 0, 0.9);
@@ -506,8 +521,8 @@ footer > div {
 
 footer > div a {
     color: white;
-    font-size: 18px;
-    padding-left: 10px;
+    font-size: 1.125rem;
+    padding-left: 0.625rem;
 }
 
 footer > div > div {
@@ -518,8 +533,8 @@ footer > div > div {
 
 footer > p {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 18px;
-    margin-top: 30px;
+    font-size: 1.125rem;
+    margin-top: 1.875rem;
     margin-bottom: 1rem;
 }
 
@@ -528,5 +543,5 @@ footer > a {
 }
 
 footer > a img {
-    width: 140px;
+    width: 8.75rem;
 }

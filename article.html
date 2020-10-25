@@ -94,23 +94,41 @@
 					Supporting this idea, an early study published in the New England Journal of Medicine found that SARS-CoV-2 survived on various surfaces for several days, including 24 hours on cardboard and 72 hours on plastic. Public health organizations recommended hand hygiene as the first line of defense against the virus, and there were runs on Lysol wipes and hand sanitizer at supermarkets and drugstores, the supply chains for which still have not recovered.
 				</p>
 
-				<div>
-					<!-- CLAP BUTTON -->
-					<button>
-						<img src="images/clap.svg" />
-						<h3>
-							20K
-						</h3>
-					</button>
+				<!-- CLAP BUTTON -->
+				<div class="claps">
+					<!-- User click counter -->
+					<div id="clicker" class="click-counter">
+						<span class="counter">+1</span>
+					</div>
+					
+					<!-- Button -->
+					<div id="clap" class="clap-container">
+						<img src="images/clap.svg" alt="clap icon"></img>
+					</div>
 
-					<!-- REACTION BUTTON -->
-					<button>
-						<img src="images/responses.svg" />
-						<h3>
-							103
-						</h3>
-					</button>
+					<!-- Total amount of claps given -->
+					<div id="totalCounter" class="total-counter">69</div>
+
+					<!-- Particles for animation -->
+					<div id="particles" class="particles-container">
+						<div class="triangle pop-top">
+							<div class="square"></div>
+						</div>
+						<div class="triangle pop-top-left">
+							<div class="square"></div>
+						</div>
+						<div class="triangle pop-top-right">
+							<div class="square"></div>
+						</div>
+						<div class="triangle pop-bottom-right">
+							<div class="square"></div>
+						</div>
+						<div class="triangle pop-bottom-left">
+							<div class="square"></div>
+						</div>
+					</div>
 				</div>
+					
 			</article>
 		</main>
 
@@ -144,7 +162,6 @@
 		</footer>
 
 		<!-- LINK THE JAVASCRIPT TO HTML -->
-
 		<script src="scripts/script.js"></script>
 
 	</body>

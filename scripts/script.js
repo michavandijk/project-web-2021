@@ -1,9 +1,10 @@
 // NAVIGATION SCROLL FUNCTION
 
-// variables needed for the scroll function
+// static variables needed for the scroll function
 const prevButton = document.querySelector("header nav img:first-of-type");
 const nextButton = document.querySelector("header nav img:last-of-type");
 const ul = document.querySelector("header nav ul");
+
 
 function goToNextItem() { // create function to go to the next items
   ul.scroll({ // the scroll method of the Element interface scrolls the element to a particular set of coordinates inside a given element
@@ -27,50 +28,54 @@ nextButton.addEventListener("click", goToNextItem);
 
 // CLAPS ANIMATION
 
-const clapsContainer = document.querySelector('.clap-container');
+// static variables needed for the on click events
+const clapsContainer = document.querySelector('.claps');
 const clickCounter = document.querySelector('.click-counter');
 const userClapsCounter = clickCounter.querySelector('.counter');
 const totalClapsCounter = document.querySelector('.total-counter');
 const particlesContainer = document.querySelector('.particles-container');
+
+// dynamic variables needed for the on click events
 let userClaps = 0;
 let totalClaps = 69;
 
+
 clapsContainer.addEventListener('click', function () {
-  clapsContainer.classList.add('has-clapped');
+  // clapsContainer.classList.add('has-clapped'); // the function add the class '.has-clapped' to the clapsContainer
 
   if (!clickCounter.classList.contains('is-animating')) {  // if clickCounter does NOT (!) contain class 'animateInOut' then call function
-    increaseUserClaps();
-    increaseTotalClaps();
+    increaseUserClaps(); // call this function
+    increaseTotalClaps(); // call this function
 
-    animateClickCounter();
+    animateClickCounter(); // call this function
   }
 
-  animateParticlesContainer();
+  animateParticlesContainer(); // call this function
 })
 
 function animateClickCounter() {
-  clickCounter.classList.add('is-animating');
+  clickCounter.classList.add('is-animating'); // call this function to start the CSS keyframes
 
   setTimeout(function() {
-    clickCounter.classList.remove('is-animating');
-  }, 3010);
+    clickCounter.classList.remove('is-animating'); // when the animation is over delete '.is-animating' class to let the user start the animation again
+  }, 3000);
 }
 
 function increaseUserClaps () {
-  userClaps++;
-  userClapsCounter.innerHTML = '+' + userClaps;
+  userClaps++; // increase userClaps by 1
+  userClapsCounter.innerHTML = '+' + userClaps; // edit the HTML, adds a '+'-icon and sets the 'new' userClaps
 }
 
 function increaseTotalClaps () {
-  totalClaps++;
-  totalClapsCounter.innerHTML = totalClaps;
+  totalClaps++; // increase totalClaps by 1
+  totalClapsCounter.innerHTML = totalClaps; // edit the HTML, sets the 'new' totalClaps
 }
 
 function animateParticlesContainer() {
-  particlesContainer.style.transform = 'rotate(' + Math.floor(Math.random() * (72 - 1  + 1)) + 1 + 'deg)';
-  particlesContainer.classList.add('is-animating');
+  particlesContainer.style.transform = 'rotate(' + Math.floor(Math.random() * (72 - 1  + 1)) + 1 + 'deg)'; // make a random rotation 
+  particlesContainer.classList.add('is-animating'); // add a class, so the CSS and JS know an animation is in progress
 
   setTimeout(function() {
-    particlesContainer.classList.remove('is-animating');
+    particlesContainer.classList.remove('is-animating'); // when the animation is over delete '.is-animating' class to let the user start the animation again
   }, 1000);
 }

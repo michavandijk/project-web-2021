@@ -98,8 +98,7 @@ De laatste week was aangebroken. Tijd om nog de volgende punten aan te pakken:
 Dit bleek lastiger dan in eerste instantie gedacht. Het zorgde voor een hele hoop JavaScript (en hoofdpijn). Door toch het gebruik van JS wat terug te dringen en wat meer in mijn kennisgebied te blijven, heb ik de animatie kunnen animeren met keyframes in CSS. Dit was al een stuk makkelijker, maar alsnog wel een flinke uitdaging.
 
 **Reactie plaatsen en daadwerkelijk tonen**
-Helaas ben ik door het gebrek aan tijd (o.a. door de druk bij de andere vakken) hier niet meer aan toe gekomen.
-
+Helaas ben ik door het gebrek aan tijd (o.a. door de druk bij de andere vakken en de uitloop van het maken van de claps animatie) hier niet meer aan toe gekomen.
 
 **Toegankelijkheid checken**
 Door middel van de screenreader om Mac heb je goed kunnen checken of mijn HTML semantisch correct was voor slechtzienden. Dit was al aardig goed, maar hier en daar waren er toch nog wat puntjes om een te pakken. 

@@ -562,6 +562,7 @@ footer > a img {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    /* position relative means that an element’s original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. */
     position: relative;
 }
 
@@ -570,6 +571,7 @@ footer > a img {
 }
 
 .click-counter {
+    /* position absolute means that the element is removed from the flow of the document */
     position: absolute;
     top: 0;
     left: 0;
@@ -582,23 +584,30 @@ footer > a img {
     justify-content: center;
     align-items: center;
     transition: opacity 0.2s ease;
+    /* by default the click-counter is not visable */
     opacity: 0;
+    /* you will not be able to click on the counter */
     pointer-events: none;
+    /* position the counter up (higher) */
     transform: translateY(1.875rem);
 }
 
 .click-counter.is-animating {
+    /* this class triggers an animation */
     animation: clickCounterFadeInOut 3s forwards;
 }
 
 #clap.clap-container img {
+    /* necessary to reset css made earlier on */
     width: auto;
     height: auto;
 }
 
 @keyframes clickCounterFadeInOut {
     0% {
+        /* the counter is not visable */
         opacity: 0;
+        /* the counter has been given a certain place vertically */
         transform: translateY(1.875rem);
     }
 
@@ -636,10 +645,12 @@ footer > a img {
 }
 
 .particles-container.is-animating {
+    /* when the animation is triggered, makes sure it is visable */
     opacity: 1;
 }
 
 .triangle {
+    /* styles for the triangle particles */
     border-left: 0.25rem solid transparent;
     border-right: 0.25rem solid transparent;
     border-top: 0.625rem solid red;
@@ -648,6 +659,7 @@ footer > a img {
 }
 
 .square {
+    /* styles for the squared particles */
     width: 0.3125rem;
     height: 0.3125rem;
     background: #03a87c;
@@ -656,6 +668,7 @@ footer > a img {
     top: 0;
 }
 
+/* trigger animation when class is added/ enabled */
 .particles-container.is-animating .pop-top {
     animation: pop-top 1s forwards;
 }
@@ -672,52 +685,70 @@ footer > a img {
     animation: pop-bottom-left 1s forwards;
 }
 
+
+/* KEYFRAMES */
+
 @keyframes pop-top {
     0% {
+        /* reset transform settings */
         transform: translate(0, 0) rotate(0);
+        /* makes the particle slightly visable */
         opacity: 0.4;
     }
     100% {
+        /* set new transform settings // translate(X-axis, Y-axis) */
         transform: translate(0, -6.25rem) rotate(0);
         opacity: 0;
     }
 }
 @keyframes pop-top-left {
     0% {
+        /* reset transform settings */
         transform: translate(0, 0) rotate(-55deg);
+        /* makes the particle slightly visable */
         opacity: 0.4;
     }
     100% {
+        /* set new transform settings // translate(X-axis, Y-axis) */
         transform: translate(-6.25rem, -3.125rem) rotate(-55deg);
         opacity: 0;
     }
 }
 @keyframes pop-top-right {
     0% {
+        /* reset transform settings */
         transform: translate(0, 0) rotate(55deg);
+        /* makes the particle slightly visable */
         opacity: 0.4;
     }
     100% {
+        /* set new transform settings // translate(X-axis, Y-axis) */
         transform: translate(6.25rem, -3.125rem) rotate(55deg);
         opacity: 0;
     }
 }
 @keyframes pop-bottom-right {
     0% {
+        /* reset transform settings */
         transform: translate(0, 0) rotate(135deg);
+        /* makes the particle slightly visable */
         opacity: 0.4;
     }
     100% {
+        /* set new transform settings // translate(X-axis, Y-axis) */
         transform: translate(4.375rem, 5rem) rotate(135deg);
         opacity: 0;
     }
 }
 @keyframes pop-bottom-left {
     0% {
+        /* reset transform settings */
         transform: translate(0, 0) rotate(-135deg);
+        /* makes the particle slightly visable */
         opacity: 0.4;
     }
     100% {
+        /* set new transform settings // translate(X-axis, Y-axis) */
         transform: translate(-4.375rem, 5rem) rotate(-135deg);
         opacity: 0;
     }

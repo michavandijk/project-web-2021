@@ -72,7 +72,7 @@ function increaseTotalClaps () {
 }
 
 function animateParticlesContainer() {
-  particlesContainer.style.transform = 'rotate(' + Math.floor(Math.random() * (72 - 1  + 1)) + 1 + 'deg)'; // make a random rotation 
+  particlesContainer.style.transform = 'rotate(' + Math.floor(Math.random() * (72 - 1  + 1)) + 1 + 'deg)'; // calculate a random rotation 
   particlesContainer.classList.add('is-animating'); // add a class, so the CSS and JS know an animation is in progress
 
   setTimeout(function() {
